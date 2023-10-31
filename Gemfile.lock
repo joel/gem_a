@@ -1,5 +1,6 @@
-PATH
-  remote: ../../GemB/gem_b
+GIT
+  remote: git@github.com:joel/gem_b.git
+  revision: e77ceb67790ffd144f3771b848c1c6eacea49459
   specs:
     gem_b (0.1.0)
       zeitwerk

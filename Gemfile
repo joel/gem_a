@@ -15,4 +15,5 @@ gem "rspec", "~> 3.0"
 
 gem "rubocop", "~> 1.21"
 
-gem "gem_b", path: "../../GemB/gem_b"
+# gem "gem_b", path: "../../GemB/gem_b"
+gem "gem_b", git: "git@github.com:joel/gem_b.git"
