@@ -1,4 +1,10 @@
 PATH
+  remote: ../../GemB/gem_b
+  specs:
+    gem_b (0.1.0)
+      zeitwerk
+
+PATH
   remote: .
   specs:
     gem_a (0.1.0)
@@ -69,6 +75,7 @@ PLATFORMS
 
 DEPENDENCIES
   gem_a!
+  gem_b!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.21)

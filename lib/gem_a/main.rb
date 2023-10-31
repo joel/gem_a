@@ -3,7 +3,7 @@
 module GemA
   class Main
     def gem_a(input)
-      input
+      GemB::Main.new.gem_b(input)
     end
   end
 end

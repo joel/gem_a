@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# # frozen_string_literal: true
+
+# require "bundler/setup"
+# require "gem_a"
+
+# ruby -Ilib -I../../GemB/gem_b -e "require 'gem_a'; puts GemA::Main.new.gem_a(\"$@\")"
