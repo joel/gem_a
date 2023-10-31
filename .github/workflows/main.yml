@@ -19,13 +19,13 @@ jobs:
     steps:
       -
         name: Check Out Repo B
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: joel/gem_b
-          token: ${{ secrets.JOEL_PAT_2 }} # `GH_PAT` is a secret that contains your PAT
+          token: ${{ github.JOEL_PAT_2 }} # `GH_PAT` is a secret that contains your PAT
           path: gem_b
       -
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       -
         name: Set up Ruby
         uses: ruby/setup-ruby@v1
