@@ -4,5 +4,5 @@ require_relative "gem_a/version"
 
 module GemA
   class Error < StandardError; end
-  # Your code goes here...
+  
 end
