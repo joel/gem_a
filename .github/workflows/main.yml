@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: joel/gem_b
-          token: ${{ secrets.JOEL_PAT_1 }} # `GH_PAT` is a secret that contains your PAT
+          token: ${{ secrets.JOEL_PAT_2 }} # `GH_PAT` is a secret that contains your PAT
           path: gem_b
       -
         uses: actions/checkout@v3
