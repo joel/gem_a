@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: joel/gem_b
-          token: ${{ secrets.JOEL_PAT_2 }}
+          token: ${{ secrets.JOEL_PAT_2 || github.token }}
           path: gem_b
       -
         uses: actions/checkout@v4
