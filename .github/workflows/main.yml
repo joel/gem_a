@@ -29,9 +29,7 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
       -
         name: Install Dependencies
-        run: |
-          bundle config github.com ${{ secrets.TestGemAB }}
-          bundle install --jobs 4 --retry 3
+        run: bundle install --jobs 4 --retry 3
       -
         name: Run the default task
         run: bundle exec rake
