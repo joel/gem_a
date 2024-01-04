@@ -18,20 +18,20 @@ jobs:
 
     steps:
       -
-        name: Check Out Repo B
+        name: Checkout Source Code
         uses: actions/checkout@v4
         with:
-          repository: joel/gem_b
-          token: ${{ secrets.JOEL_PAT_1 || github.token }}
-          path: gem_b
-      -
-        uses: actions/checkout@v4
+          fetch-depth: '1'
       -
         name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
+      -
+        name: Install Dependencies
+        run: |
+          bundle config github.com ${{ secrets.TestGemAB }}
+          bundle install --jobs 4 --retry 3
       -
         name: Run the default task
         run: bundle exec rake
